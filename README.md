@@ -1,6 +1,8 @@
 # kivy-ios_encrypt
 
-Since both PyCrypto and PyCryptodome cause issues in kivy-ios, I switched to another solution instead.
+### Since both PyCrypto and PyCryptodome cause issues in kivy-ios, I switched to another solution instead.
+
+### do not build/pip install pycrypto/pycryptodome kivy-ios, it will cause fail to upload app to apple connect
 
 1. create encrypthelper.h:
 ```
