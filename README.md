@@ -65,6 +65,7 @@
         }
 
         NSString *filePath = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents/encrypted.txt"];
+        [cipherData writeToFile:filePath atomically:YES];
         NSLog(@"[EncryptionHelper] 🔐 encrypt result (Hex): %@", hexString);
         NSLog(@"[EncryptionHelper] 🔐 encrypt result : %@", cipherData);
         NSLog(@"[EncryptionHelper] 🔐 CipherData length: %lu", cipherData.length);
